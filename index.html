@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stockora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="app">
+
+<!-- Landing page -->
+<section class="land" id="land">
+  <i class="blob b1"></i><i class="blob b2"></i>
+  <span class="chip c1"><i style="background:#35B5AF"></i>In Stock</span>
+  <span class="chip c2"><i style="background:#E5A93D"></i>Low Stock</span>
+  <span class="chip c3"><i style="background:#E36B6B"></i>Out of Stock</span>
+  <span class="chip c4">Order placed</span>
+  <span class="chip c5">Delivery received</span>
+  <div class="hero">
+    <h1 aria-label="Stockora"><span aria-hidden="true" style="animation-delay:0ms">S</span><span aria-hidden="true" style="animation-delay:70ms">t</span><span aria-hidden="true" style="animation-delay:140ms">o</span><span aria-hidden="true" style="animation-delay:210ms">c</span><span aria-hidden="true" style="animation-delay:280ms">k</span><span aria-hidden="true" style="animation-delay:350ms">o</span><span aria-hidden="true" style="animation-delay:420ms">r</span><span aria-hidden="true" style="animation-delay:490ms">a</span></h1>
+    <p>Keep track of what’s in stock, what to order next, and what has arrived.</p>
+    <a class="btn cta" href="#overview">Open Dashboard</a>
+  </div>
+</section>
+
+<!-- Dashboard, Inventory, Restock Actions and Settings are drawn into #main by script.js -->
+<div class="app" id="app">
+  <aside class="side">
+    <a class="brand" href="#home">Stockora</a>
+    <a href="#overview" data-r="overview">Overview</a>
+    <a href="#inventory" data-r="inventory">Inventory</a>
+    <a href="#restock" data-r="restock">Restock Actions</a>
+    <a href="#settings" data-r="settings">Settings</a>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+
+<div id="modal" role="dialog" aria-modal="true"><div class="dlg" id="dlg"></div></div>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
